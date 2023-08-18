@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: Home.php');
         exit();
     } else {
-        echo "Login failed. Invalid username or password.";
+        header('Location: index.php');
     }
 }
 ?>
